@@ -1,0 +1,19 @@
+DirectoryIndex index.html
+AddType text/html .html
+AddType application/atom+xml .atom
+RewriteEngine On
+
+RewriteCond %{REQUEST_FILENAME} -f [OR]
+RewriteCond %{REQUEST_FILENAME} -d
+RewriteRule ^(.+) - [PT,L]
+
+#RewriteRule /songs.html /index.html [P]
+
+redirect 301 /songs.html /songs!/i-like.html
+
+RewriteCond %{ENV:REDIRECT_SUBDOMAIN} =""
+RewriteCond %{HTTP_HOST} (i.*)\.leanside\.com$ [NC]
+RewriteCond %{DOCUMENT_ROOT}/%1 -d
+RewriteRule ^(.*) %1/$1 [E=SUBDOMAIN:%1,L]
+RewriteRule ^ - [E=SUBDOMAIN:%{ENV:REDIRECT_SUBDOMAIN},L]
+

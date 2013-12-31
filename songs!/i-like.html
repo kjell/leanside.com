@@ -1,0 +1,56 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <title>— ✼ — ⑇ — ⎃ — ᴥ — 〽 —</title>
+  <meta name="author" content="Kjell Olsen">
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/prototype/1.6.0.2/prototype.js"></script>
+  <script type="text/javascript" src="http://xn--m3h.tumblr.com/api/read/json?type=audio&amp;num=151"></script>
+  <script type="text/javascript" charset="utf-8">
+    var html = tumblr_api_read['posts'].inject("", function(string, song){
+      var player = song['audio-player'].sub('height="27" width="207"', 'height="15" width="123"');
+      return string += "<li><h3>" + song['audio-caption'] + "<\/h3><span>" + player + "<\/span><\/li>";
+    });
+    
+    Event.observe(window, 'load', function() {
+      $('songs').insert({'top': html});
+      $$('span').each(function(obj) {obj.observe('click', function() {handleInteractions(obj)});});
+    })
+    
+    function handleInteractions(obj) {
+      var parent = obj.ancestors().first();
+      $$('li').map(function(li) {if(li.classNames().include('active')) li.addClassName('played').removeClassName('active');});
+      parent.toggleClassName('active')
+      var title = title_suffix = " — ✼ — ⑇ — ⎃ — ᴥ — 〽 —";
+      parent.playing ? parent.addClassName('played') : title = parent.descendants().first().innerHTML.stripTags() + title_suffix;
+      changeActiveElement(parent);
+      document.title = title;
+    }
+    
+    function changeActiveElement(song) {                   
+      song.played = song.playing;
+      song.playing = song.playing ? false : true;  
+    }
+  </script>
+  
+  <style type="text/css" media="screen">
+    body { 
+      margin: 1em 17%; background-color: black; color: #069;
+      font: normal 1em/1.51515em 'Helvetica Neue','HelveticaNeue',helvetica,sans-serif; /* stole this from textism.com; hat tip dean */
+    }
+    
+    ul { list-style: none; }
+    li { display: inline; margin-right: 0.51515em; }
+    li + li:before { content: "\A7"; margin-right: 0.51515em; }
+    h3, h3 p { display: inline; } span { z-index: 1000; }
+    embed { margin-left: 0.51515em; }
+    li.active h3 { background-color: yellow; padding: 0.1em; }
+    li.played { color: #777; }
+  </style>
+</head>
+<body>
+  <ul id="songs">
+    <li>(Songs posted by <a href="/">Kjell</a> to <a href="http://xn--m3h.tumblr.com">☂</a>. <a href="http://kjell.muxtape.com">A few more</a>, then <a href="http://last.fm/user/misterk">stats!</a>)</li>
+  </ul>
+</body>
+</html>

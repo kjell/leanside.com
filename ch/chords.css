@@ -1,0 +1,24 @@
+h1, h2 { display: none; }
+
+body {
+  position: absolute;
+	top: 0; left: 0;
+	width: 100%;
+	padding: 0; margin: 0;
+	overflow-y: hidden; overflow-x: hidden;
+}
+
+input {
+	font-size: 16px;
+	width: 280px;
+	height: 20px;
+	margin: .5em;
+	padding: 5px;
+	color: black;
+	background: -webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,.4)), color-stop(.2, rgba(0,0,0,.2)), to(rgba(0,0,0,.2)));
+	border: 1px solid rgba(255,255,255,.7);
+}
+
+pre {
+  font-size: 1.3em;
+}
