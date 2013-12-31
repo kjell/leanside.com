@@ -1,0 +1,6 @@
+name: leanside.com
+markdown: redcarpet
+kramdown:
+  input: GFM
+pygments: true
+permalink: /:year/:month/:title/
