@@ -4,3 +4,8 @@ kramdown:
   input: GFM
 pygments: true
 permalink: /:year/:month/:title/
+
+author:
+  name: Kjell
+  email: kjell@leanside.com
+production_url: http://leanside.com
