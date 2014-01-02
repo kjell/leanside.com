@@ -9,3 +9,6 @@ author:
   name: Kjell
   email: kjell@leanside.com
 production_url: http://leanside.com
+
+prose:
+  rooturl: '_posts'
