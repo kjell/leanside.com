@@ -1,0 +1,20 @@
+{% capture this_post %}
+  <p>{{page.date | date: "%-m/%-d/%y"}} – {{page.title}}</p>
+{% endcapture %}
+<nav>
+  {% unless page.index %}<a href="/" rel="home">Home</a>{% endunless %}
+  {% unless page.next.url %} 
+    {% for post in site.posts limit:3 %}
+    {% unless post.url == page.url %}
+      {% include post.html post=post %}
+    {% else %}
+      {{ this_post }}
+    {% endunless %}
+    {% endfor %}
+  {% else %}
+    {% include post.html post=page.next %}
+    {{ this_post }}
+    {% include post.html post=page.previous %}
+  {% endunless %}
+</nav>
+

@@ -1,0 +1,6 @@
+{% if include.post %}
+  <a href="{{include.post.url}}">
+    {{include.post.date | date: "%-m/%-d/%y"}} – {{include.post.title}}
+  </a> 
+{% endif %}
+

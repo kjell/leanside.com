@@ -1,0 +1,37 @@
+body {
+  margin: 1em;
+  line-height: 1.2em;
+}
+@media (min-width: 60em) {
+  body {
+    margin: 1em 2em;
+  }
+}
+
+.post p {
+  max-width: 30em;
+}
+
+.post pre {
+  padding: 0 0.2em;
+}
+.post pre code {
+  background-color: white;
+}
+.post code {
+  background-color: #eee;
+}
+
+nav { text-transform: lowercase; }
+nav a { display: block; }
+nav p { margin: 0; }
+@media (min-width: 49em) {
+  nav {
+    position: fixed;
+    bottom: 1em;
+    right: 1em;
+  }
+  @media (min-width: 70em) {
+    nav { left: 57em; }
+  }
+}
