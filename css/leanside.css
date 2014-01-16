@@ -39,3 +39,15 @@ nav p { margin: 0; }
     nav { left: 57em; }
   }
 }
+@media (max-width: 49em) {
+  video {
+    max-width: 100%;
+    min-height: 288px;
+  }
+}
+@media (min-width: 40em) and (max-width: 49em) {
+  video {
+    width: 480px;
+    height: 480px;
+  }
+}
