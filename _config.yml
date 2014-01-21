@@ -1,4 +1,4 @@
-name: leanside.com
+name: Leanside
 markdown: redcarpet
 kramdown:
   input: GFM
