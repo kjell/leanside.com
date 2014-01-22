@@ -1,0 +1,12 @@
+---
+layout: default
+archive: true
+index: false
+---
+
+<nav>
+  <a href="/" rel="home">home</a>
+  {% for post in site.posts %}
+    {% include post.html post=post %}
+  {% endfor %}
+</nav>

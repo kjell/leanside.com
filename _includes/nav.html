@@ -16,5 +16,6 @@
     {{ this_post }}
     {% include post.html post=page.previous %}
   {% endunless %}
+  {% unless page.archive %}<a href="/archive/">Archive</a>{% endunless %}
 </nav>
 
