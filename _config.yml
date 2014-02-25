@@ -1,7 +1,11 @@
 name: Leanside
-markdown: redcarpet
+markdown: kramdown
 kramdown:
   input: GFM
+  auto_ids: true
+  entity_output: as_char
+  smart_quotes: lsquo,rsquo,ldquo,rdquo
+  enable_coderay: false
 pygments: true
 permalink: /:year/:month/:title/
 
