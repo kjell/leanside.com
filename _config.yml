@@ -6,6 +6,7 @@ kramdown:
   entity_output: as_char
   smart_quotes: lsquo,rsquo,ldquo,rdquo
   enable_coderay: false
+  hard_wrap: false
 pygments: true
 permalink: /:year/:month/:title/
 
