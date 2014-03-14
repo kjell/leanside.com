@@ -26,6 +26,10 @@ hr {
   background-color: #eee;
 }
 
+.post img {
+  max-width: 100%;
+}
+
 nav { text-transform: lowercase; }
 nav a { display: block; }
 nav p { margin: 0; }
