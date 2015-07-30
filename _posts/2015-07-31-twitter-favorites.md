@@ -25,14 +25,18 @@ Tweets       2,526
 Favorites    923
 ```
 
-My use ebbs and flows. Right now it's the most interesting place I
-find information. I try to follow interesting people and occupy their
-slipstreams through the web. Or
-[contrails](http://interconnected.org/home/2006/06/15/my_wikipedia_contrail) [^1], per Matt Webb. I don't post much, and what I do post in inane.
+My use ebbs and flows. I don't post much, and what I do post in inane.
+Right now it's *read-mostly*, the best place to find information. I try
+to follow interesting people and occupy their slipstreams through the
+web.
+[Contrails](http://interconnected.org/home/2006/06/15/my_wikipedia_contrail)
+per Matt Webb[^1] .
 
 But when there's a tidbit that strikes me, I favorite it. (Tweetbot's
 *swipe this box until you see an empty star stage right, then let go* is
-perfect.) Others behave similarly. Those who do leave behind
+perfect.)
+
+Others behave similarly. Those who do leave behind
 clear and fascinating slip trails, which my game plays upon to give me a
 brief window into a slice of their thinking.
 
