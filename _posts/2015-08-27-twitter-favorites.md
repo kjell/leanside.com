@@ -12,8 +12,8 @@ simple.
 5. GOTO 2
 
 When I first heard of twitter I thought it was stupid. I was wrong! A
-few months later [I reconsidered and signed
-up](https://discover.twitter.com/first-tweet#kjell_). That was 9 years
+few months later I reconsidered and signed
+up[.](https://discover.twitter.com/first-tweet#kjell_) That was 9 years
 ago.
 
 ```bash
@@ -37,8 +37,8 @@ But when there's a tidbit that strikes me, I favorite it. (Tweetbot's
 perfect.)
 
 Others behave similarly. Those who do leave behind
-clear and fascinating slip trails, which my game plays upon to give me a
-brief window into a slice of their thinking.
+clear and fascinating slip trails, which my game plays upon to let me
+borrow a bit of someone else's interesting-ness.
 
 ---
 
